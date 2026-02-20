@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Пријава</title>
+       <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">   </head>
+    <body>
+       <div class="prijava">
+        <h2>Пријава за Пливање за Часни Крст Господњи</h2>
+        <div class="forms">
+        <form method="POST">
+            <input type="text" name="first_name" placeholder="Име" required><br>
+            <input type="text" name="last_name" placeholder="Презиме" required><br>
+            <input type="email" name="email" placeholder="Email" required><br>
+            <input type="tel" name="telephone" placeholder="Број телефона"><br>
+            <button type="submit">Потврди своју пријаву</button>
+        </form>
+        {% if message %}
+<p id="success-message">{{ message }}</p>
+{% endif %}
+        </div>
+        </div> 
+    </body>
+</html>
