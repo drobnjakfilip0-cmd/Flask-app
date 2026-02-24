@@ -65,3 +65,19 @@ body {
 h2 {
     font-family: 'Manrope';
 }
+
+p { font-family: 'Manrope';}
+input::placeholder{
+    font-family: 'Manrope';
+    font-weight: 100;
+}
+
+.prijava a {
+    font-family: 'Manrope';
+    text-decoration: None;
+    color: white;
+    padding: 5px;
+    background-color: #2563eb;
+    border-radius: 5px;
+    border-color: #2563eb;
+}
